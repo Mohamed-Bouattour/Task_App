@@ -1,0 +1,216 @@
+/* Miligram overrides */
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+}
+
+.top-nav-links,
+.side-nav,
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    color: #363637;
+}
+
+a {
+    color:black;
+    /*-webkit-transition:all 0.2s linear;
+    transition:all 0.2s linear;*/
+}
+
+
+a:focus,
+a:active  {
+    color:#2a6496;
+    -webkit-transition:all 0.2s easeout;
+    transition:all 0.2s ease-out;
+}
+
+.side-nav a,
+th a,
+.actions a {
+    color: #606c76;
+    background-color: transparent !important;
+}
+
+.side-nav a:hover,
+.side-nav a:focus,
+.actions a:hover,
+.actions a:focus {
+    color:#2f85ae;
+}
+
+
+
+/* Utility */
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Main */
+body {
+    background: #f5f7fa;
+}
+.content {
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 0.4rem;
+    box-shadow: 0 7px 14px 0 rgba(60, 66, 87, 0.1),
+        0 3px 6px 0 rgba(0, 0, 0, 0.07);
+}
+.actions a {
+    font-weight: bold;
+    padding: 0 0.4rem;
+}
+.actions a:first-child {
+    padding-left: 0;
+}
+th {
+    white-space: nowrap;
+}
+
+
+.top-nav {
+    width: 100%;
+    padding: 2rem;
+    margin: 0 auto 2rem;
+    background-color: #2779bd;
+    display: flex;
+    justify-content: space-between;
+}
+.top-nav-title a {
+    font-size: 2.4rem;
+    color: #204ad2;
+}
+.top-nav-title span {
+    color: black;
+}
+.top-nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15rem; 
+    margin: 0px;
+    max-width: auto;
+}
+.top-nav-title a{
+    font-weight: bold;   
+}
+.top-nav-title{
+    max-width: auto;  
+}
+.logout{
+    position: relative;
+    display: flex;
+    float: right;
+    background-color: blue;
+    color:black;
+    border-color:blue;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: auto;
+}
+.logout:hover{
+    color: blue !important;
+}
+.logout p{
+    position: relative;
+    margin-top: -30%;
+}
+.paginator p:hover{
+    display: block !important;
+}
+.projects p, .tasks p, .users p, .progress p {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+.projects p:hover, .tasks p:hover, .users p:hover, .progress p:hover {
+    color: white;
+    cursor: pointer;
+}
+
+
+
+/* Responsive */
+@media screen and (max-width: 960px) {
+    .top-nav {
+        margin: 0 auto;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .side-nav {
+        margin-bottom: 1rem;
+    }
+    .heading {
+        margin-bottom: 1rem;
+    }
+    .side-nav-item {
+        display: inline;
+        margin: 0 1.5rem 0 0;
+    }
+    .top-nav-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1em; 
+        margin: 0px;
+        max-width: auto;
+    }
+    
+}
+
+@media screen and (max-width: 570px) {
+    .top-nav {
+        margin: 0 auto;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .side-nav {
+        margin-bottom: 1rem;
+    }
+    .heading {
+        margin-bottom: 1rem;
+    }
+    .side-nav-item {
+        display: inline;
+        margin: 0 1.5rem 0 0;
+    }
+    .top-nav-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.3em; 
+        margin: 0px;
+        max-width: auto;
+    }
+
+    .projects p, .tasks p, .users p, .progress p {
+        color: black;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    .top-nav-title a {
+        font-size: 2rem;
+        color: #204ad2;
+    }
+
+    .logout{
+        position: relative;
+        display: flex;
+        float: right;
+        background-color: blue;
+        color:black;
+        border-color:blue;
+        padding: 10px;
+        border-radius: 10px;
+        max-width: auto;
+    }
+}
